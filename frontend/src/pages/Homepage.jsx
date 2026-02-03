@@ -71,10 +71,16 @@ function Homepage() {
                     <StyledH1>E-Commerce</StyledH1>
                     <StyledH2>Landing Page</StyledH2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repudiandae, tempora doloremque. Et non ea iure nemo
-                        possimus, unde blanditiis corrupti! Earum quisquam dolor
-                        est eum natus adipisci inventore! Amet, quo.
+                        ✅ Full-stack e-commerce platform with Node.js, Express,
+                        MongoDB, and React
+                    </p>
+                    <p>
+                        ✅ Secure CRUD operations with JWT authentication and
+                        refresh tokens in cookies
+                    </p>
+                    <p>
+                        ✅ Passwords hashed with bcrypt and protected routes,
+                        showcasing modern web development practices
                     </p>
                     <StyledButton onClick={() => navigate('/login')}>
                         Get Started
