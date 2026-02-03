@@ -8,6 +8,7 @@
     "main": "server_v4.js",
     "scripts": {
         "dev": "nodemon server_v4.js",
+        "start": "node server_v4.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
