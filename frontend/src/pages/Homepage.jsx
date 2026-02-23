@@ -36,27 +36,60 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledH2 = styled.h2`
-    color: purple;
+    color: #15803d; /* Deep modern green */
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
 `;
 
 const StyledImg = styled.img`
-    max-width: 50%;
+    max-width: 30%;
     border: 1px black;
     padding: 2rem;
     pointer-events: none;
 `;
 
 const StyledButton = styled.button`
-    background-color: #0093cd;
-    /* background-color: #2d2dfa; */
-    width: 8rem;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    border: 0.5px solid grey;
-    color: white;
+    background-color: #002487;
+    width: 12rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 10px;
+    border: none;
+
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    box-shadow: 0 10px 24px rgba(0, 36, 135, 0.35);
+    transition: all 0.25s ease;
 
     &:hover {
-        background-color: #004b69;
+        background-color: #001b66;
+        transform: translateY(-2px);
+        box-shadow: 0 14px 32px rgba(0, 36, 135, 0.45);
+        cursor: pointer;
+    }
+`;
+
+const StyledButton2 = styled.button`
+    background-color: transparent;
+    width: 12rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 10px;
+
+    border: 1.5px solid #002487;
+    color: #002487;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    transition: all 0.25s ease;
+
+    &:hover {
+        background-color: #eef2ff;
+        transform: translateY(-1px);
         cursor: pointer;
     }
 `;
@@ -66,27 +99,53 @@ function Homepage() {
     return (
         <StyledGrid>
             <Navbar />
+
             <StyledHomepage>
                 <LandingPageDiv>
-                    <StyledH1>E-Commerce</StyledH1>
-                    <StyledH2>Landing Page</StyledH2>
+                    <StyledH1>SafeMart</StyledH1>
+                    <StyledH2>
+                        A Secure MERN Stack E-Commerce Learning Project
+                    </StyledH2>
                     <p>
-                        ✅ Full-stack e-commerce platform with Node.js, Express,
-                        MongoDB, and React
+                        SafeMart is a personal full-stack project built to
+                        understand backend development concepts such as
+                        authentication, authorization, and database operations
+                        using the MERN stack.
                     </p>
                     <p>
-                        ✅ Secure CRUD operations with JWT authentication and
-                        refresh tokens in cookies
+                        ✅ JWT-based authentication using access & refresh
+                        tokens
                     </p>
+                    <p>✅ Secure CRUD operations with MongoDB and Express</p>
                     <p>
-                        ✅ Passwords hashed with bcrypt and protected routes,
-                        showcasing modern web development practices
+                        ✅ Password hashing with bcrypt and protected API routes
                     </p>
-                    <StyledButton onClick={() => navigate('/login')}>
-                        Get Started
-                    </StyledButton>
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            gap: '1rem',
+                        }}
+                    >
+                        <StyledButton onClick={() => navigate('/login')}>
+                            Explore Project
+                        </StyledButton>
+                        <StyledButton2
+                            onClick={() =>
+                                window.open(
+                                    'https://github.com/Siraj-Adil/e-dashboard',
+                                    '_blank'
+                                )
+                            }
+                        >
+                            View Source Code
+                        </StyledButton2>
+                    </div>
                 </LandingPageDiv>
-                <StyledImg src="landing_page_image.png" />
+                <StyledImg
+                    src="landing_page_image.png"
+                    alt="SafeMart Preview"
+                />
             </StyledHomepage>
             <Footer />
         </StyledGrid>

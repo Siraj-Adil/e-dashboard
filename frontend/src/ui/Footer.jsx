@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledFooter = styled.div`
     display: flex;
@@ -10,7 +10,11 @@ const StyledFooter = styled.div`
 `;
 
 function Footer() {
-    return <StyledFooter>E-commerce dashboard</StyledFooter>;
+    return (
+        <StyledFooter>
+            © {new Date().getFullYear()} SafeMart · MERN Stack Learning Project
+        </StyledFooter>
+    );
 }
 
 export default Footer;

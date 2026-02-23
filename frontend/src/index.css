@@ -10,5 +10,5 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 :root {
-    background-color: aliceblue;
+    background: linear-gradient(180deg, #cfefff 0%, #eaf7ff 45%, #ffffff 100%);
 }

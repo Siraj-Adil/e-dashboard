@@ -12,6 +12,7 @@ const StyledNavbar = styled.div`
 const StyledImg = styled.img`
     height: 4rem;
     width: auto;
+    margin-left: 2rem;
 `;
 
 const StyledList = styled.ul`
@@ -241,7 +242,7 @@ function Navbar() {
     return (
         <StyledNavbar>
             <Link to="/">
-                <StyledImg src="website_logo.png"></StyledImg>
+                <StyledImg src="website_logo.svg"></StyledImg>
             </Link>
             <StyledList>
                 {loadingUser
