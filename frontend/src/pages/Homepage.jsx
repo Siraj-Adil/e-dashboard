@@ -127,7 +127,7 @@ function Homepage() {
                             gap: '1rem',
                         }}
                     >
-                        <StyledButton onClick={() => navigate('/login')}>
+                        <StyledButton onClick={() => navigate('/products')}>
                             Explore Project
                         </StyledButton>
                         <StyledButton2
